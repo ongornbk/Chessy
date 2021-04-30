@@ -2,13 +2,14 @@
 #include "IField.h"
 #include "IBoard.h"
 
-class FieldB1 :
+class FieldF6 :
 	public IField
 {
 public:
 	const __int64 _stdcall GetIndex() const noexcept override;
 	modern_array<IField*>& GetWhitePawnMoves() override;
-	modern_array<IField*>& GetWhiteKnightMoves() override;
 
 };
+
+
 

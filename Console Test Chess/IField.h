@@ -11,7 +11,8 @@ protected:
 	class IPiece* m_piece;
 public:
 	virtual const __int64 _stdcall GetIndex() const noexcept = 0;
-	virtual modern_array<IField*>& GetWhitePawnMoves() = 0;
+	virtual modern_array<IField*>& GetWhitePawnMoves();
+	virtual modern_array<IField*>& GetWhiteKnightMoves();
 	modern_array<IField*>& GetMoves();
 	const char* const GetName() const;
 	const char* const GetPieceName() const;
@@ -20,5 +21,6 @@ public:
 	void SetBoard(class IBoard* const board);
 	bool IsEmpty() const noexcept;
 	bool HasBlackPiece() const noexcept;
+	bool IsEmptyOrBlack() const noexcept;
 };
 

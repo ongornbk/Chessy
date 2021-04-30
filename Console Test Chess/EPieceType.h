@@ -4,8 +4,8 @@ enum class EPieceType
 {
 	PAWN,
 	ROOK,
-	BISHOP,
 	KNIGHT,
+	BISHOP,
 	QUEEN,
 	KING
 };

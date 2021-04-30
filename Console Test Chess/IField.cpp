@@ -1,5 +1,17 @@
 #include "IField.h"
 
+modern_array<IField*>& IField::GetWhitePawnMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	return *fields;
+}
+
+modern_array<IField*>& IField::GetWhiteKnightMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	return *fields;
+}
+
 modern_array<IField*>& IField::GetMoves()
 {
 	if(m_piece == nullptr)
@@ -13,6 +25,10 @@ modern_array<IField*>& IField::GetMoves()
 	case EPieceType::PAWN:
 		if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
 			return GetWhitePawnMoves();
+		break;
+	case EPieceType::KNIGHT:
+		if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
+			return GetWhiteKnightMoves();
 		break;
 }
 	modern_array<IField*>* fields = new modern_array<IField*>();
@@ -67,4 +83,11 @@ bool IField::HasBlackPiece() const noexcept
 	if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_BLACK)
 		return true;
 	return false;
+}
+
+bool IField::IsEmptyOrBlack() const noexcept
+{
+	if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
+		return false;
+	return true;
 }

@@ -37,6 +37,14 @@
 #include "FieldE4.h"
 #include "FieldE5.h"
 #include "FieldE6.h"
+#include "FieldE7.h"
+#include "FieldE8.h"
+#include "FieldF1.h"
+#include "FieldF2.h"
+#include "FieldF3.h"
+#include "FieldF4.h"
+#include "FieldF5.h"
+#include "FieldF6.h"
 
 #include "Pawn.h"
 #include "Rook.h"
@@ -87,6 +95,14 @@ StdBoard::StdBoard()
 	m_fields.push_back(new class FieldE4()); //35
 	m_fields.push_back(new class FieldE5()); //36
 	m_fields.push_back(new class FieldE6()); //37
+	m_fields.push_back(new class FieldE7()); //38
+	m_fields.push_back(new class FieldE8()); //39
+	m_fields.push_back(new class FieldF1()); //40
+	m_fields.push_back(new class FieldF2()); //41
+	m_fields.push_back(new class FieldF3()); //42
+	m_fields.push_back(new class FieldF4()); //43
+	m_fields.push_back(new class FieldF5()); //44
+	m_fields.push_back(new class FieldF6()); //45
 
 
 	m_fields[0]->PutPiece(new Rook(EColor::PIECE_COLOR_WHITE));
@@ -107,6 +123,10 @@ StdBoard::StdBoard()
 	m_fields[31]->PutPiece(new Queen(EColor::PIECE_COLOR_BLACK));
 	m_fields[32]->PutPiece(new King(EColor::PIECE_COLOR_WHITE));
 	m_fields[33]->PutPiece(new Pawn(EColor::PIECE_COLOR_WHITE));
+	m_fields[38]->PutPiece(new Pawn(EColor::PIECE_COLOR_BLACK));
+	m_fields[39]->PutPiece(new King(EColor::PIECE_COLOR_BLACK));
+	m_fields[40]->PutPiece(new Bishop(EColor::PIECE_COLOR_WHITE));
+	m_fields[41]->PutPiece(new Pawn(EColor::PIECE_COLOR_WHITE));
 
 	for (auto ele : m_fields)
 	{

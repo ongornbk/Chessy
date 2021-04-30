@@ -14,3 +14,15 @@ modern_array<IField*>& FieldB1::GetWhitePawnMoves()
 	return *fields;
 }
 
+modern_array<IField*>& FieldB1::GetWhiteKnightMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	if (m_board->GetFieldByIndex(FIELD_A3)->IsEmptyOrBlack())
+		fields->push_back(m_board->GetFieldByIndex(FIELD_A3));
+	if (m_board->GetFieldByIndex(FIELD_C3)->IsEmptyOrBlack())
+		fields->push_back(m_board->GetFieldByIndex(FIELD_C3));
+	if (m_board->GetFieldByIndex(FIELD_D2)->IsEmptyOrBlack())
+		fields->push_back(m_board->GetFieldByIndex(FIELD_D2));
+	return *fields;
+}
+

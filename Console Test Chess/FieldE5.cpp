@@ -2,7 +2,7 @@
 
 const __int64 _stdcall FieldE5::GetIndex() const noexcept
 {
-	return FIELD_E4;
+	return FIELD_E5;
 }
 
 modern_array<IField*>& FieldE5::GetWhitePawnMoves()
