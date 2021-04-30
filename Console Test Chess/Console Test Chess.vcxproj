@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A1BBD4C5-C23C-49C4-A7E7-13003B9D514C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleTestChess</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\modern lib\modern lib\modern lib.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bishop.cpp" />
+    <ClCompile Include="Console Test Chess.cpp" />
+    <ClCompile Include="FieldA1.cpp" />
+    <ClCompile Include="FieldA2.cpp" />
+    <ClCompile Include="FieldA3.cpp" />
+    <ClCompile Include="FieldA4.cpp" />
+    <ClCompile Include="FieldA5.cpp" />
+    <ClCompile Include="FieldA6.cpp" />
+    <ClCompile Include="FieldA7.cpp" />
+    <ClCompile Include="FieldA8.cpp" />
+    <ClCompile Include="FieldB1.cpp" />
+    <ClCompile Include="FieldB2.cpp" />
+    <ClCompile Include="FieldB3.cpp" />
+    <ClCompile Include="FieldB4.cpp" />
+    <ClCompile Include="FieldB5.cpp" />
+    <ClCompile Include="FieldB6.cpp" />
+    <ClCompile Include="FieldB7.cpp" />
+    <ClCompile Include="FieldB8.cpp" />
+    <ClCompile Include="FieldC1.cpp" />
+    <ClCompile Include="FieldC2.cpp" />
+    <ClCompile Include="FieldC3.cpp" />
+    <ClCompile Include="FieldC4.cpp" />
+    <ClCompile Include="FieldC5.cpp" />
+    <ClCompile Include="FieldC6.cpp" />
+    <ClCompile Include="FieldC7.cpp" />
+    <ClCompile Include="FieldC8.cpp" />
+    <ClCompile Include="FieldD1.cpp" />
+    <ClCompile Include="FieldD2.cpp" />
+    <ClCompile Include="FieldD3.cpp" />
+    <ClCompile Include="FieldD4.cpp" />
+    <ClCompile Include="FieldD5.cpp" />
+    <ClCompile Include="FieldD6.cpp" />
+    <ClCompile Include="FieldD7.cpp" />
+    <ClCompile Include="FieldD8.cpp" />
+    <ClCompile Include="FieldE1.cpp" />
+    <ClCompile Include="FieldE2.cpp" />
+    <ClCompile Include="FieldE3.cpp" />
+    <ClCompile Include="FieldE4.cpp" />
+    <ClCompile Include="FieldE5.cpp" />
+    <ClCompile Include="FieldE6.cpp" />
+    <ClCompile Include="IField.cpp" />
+    <ClCompile Include="IPiece.cpp" />
+    <ClCompile Include="King.cpp" />
+    <ClCompile Include="Knight.cpp" />
+    <ClCompile Include="Pawn.cpp" />
+    <ClCompile Include="Queen.cpp" />
+    <ClCompile Include="Rook.cpp" />
+    <ClCompile Include="StdBoard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bishop.h" />
+    <ClInclude Include="EColor.h" />
+    <ClInclude Include="EOccupancy.h" />
+    <ClInclude Include="EPieceType.h" />
+    <ClInclude Include="FieldA1.h" />
+    <ClInclude Include="FieldA2.h" />
+    <ClInclude Include="FieldA3.h" />
+    <ClInclude Include="FieldA4.h" />
+    <ClInclude Include="FieldA5.h" />
+    <ClInclude Include="FieldA6.h" />
+    <ClInclude Include="FieldA7.h" />
+    <ClInclude Include="FieldA8.h" />
+    <ClInclude Include="FieldB1.h" />
+    <ClInclude Include="FieldB2.h" />
+    <ClInclude Include="FieldB3.h" />
+    <ClInclude Include="FieldB4.h" />
+    <ClInclude Include="FieldB5.h" />
+    <ClInclude Include="FieldB6.h" />
+    <ClInclude Include="FieldB7.h" />
+    <ClInclude Include="FieldB8.h" />
+    <ClInclude Include="FieldC1.h" />
+    <ClInclude Include="FieldC2.h" />
+    <ClInclude Include="FieldC3.h" />
+    <ClInclude Include="FieldC4.h" />
+    <ClInclude Include="FieldC5.h" />
+    <ClInclude Include="FieldC6.h" />
+    <ClInclude Include="FieldC7.h" />
+    <ClInclude Include="FieldC8.h" />
+    <ClInclude Include="FieldD1.h" />
+    <ClInclude Include="FieldD2.h" />
+    <ClInclude Include="FieldD3.h" />
+    <ClInclude Include="FieldD4.h" />
+    <ClInclude Include="FieldD5.h" />
+    <ClInclude Include="FieldD6.h" />
+    <ClInclude Include="FieldD7.h" />
+    <ClInclude Include="FieldD8.h" />
+    <ClInclude Include="FieldE1.h" />
+    <ClInclude Include="FieldE2.h" />
+    <ClInclude Include="FieldE3.h" />
+    <ClInclude Include="FieldE4.h" />
+    <ClInclude Include="FieldE5.h" />
+    <ClInclude Include="FieldE6.h" />
+    <ClInclude Include="gdef.h" />
+    <ClInclude Include="IBoard.h" />
+    <ClInclude Include="IField.h" />
+    <ClInclude Include="IPiece.h" />
+    <ClInclude Include="King.h" />
+    <ClInclude Include="Knight.h" />
+    <ClInclude Include="Pawn.h" />
+    <ClInclude Include="Queen.h" />
+    <ClInclude Include="Rook.h" />
+    <ClInclude Include="StdBoard.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

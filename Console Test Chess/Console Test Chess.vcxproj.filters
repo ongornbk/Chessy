@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{23ea189e-2eeb-40d7-a2e2-5794da8fccef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Fields">
+      <UniqueIdentifier>{b935d628-0965-46d5-9b09-a816a718b6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{d636f5b5-7935-4429-afdb-062862432193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enums">
+      <UniqueIdentifier>{6d478550-f2bc-40e2-b0e8-cd0ee19cefb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Pieces">
+      <UniqueIdentifier>{197b97df-dc08-4373-9f34-c8cfa885444c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Console Test Chess.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="IPiece.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="StdBoard.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="IField.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldA8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldB8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldC8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldD8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Classes\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldE6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FieldA1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="IPiece.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IField.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBoard.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="gdef.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="StdBoard.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="EOccupancy.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldA8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="EColor.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldB8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldC8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldD8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>Classes\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="EPieceType.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldE6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

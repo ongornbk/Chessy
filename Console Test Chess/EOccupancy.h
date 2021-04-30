@@ -1,0 +1,7 @@
+#pragma once
+enum class EOccupancy
+{
+	FIELD_OCCUPANCY_UNOCCUPIED,
+	FIELD_OCCUPANCY_WHITE,
+	FIELD_OCCUPANCY_BLACK
+};
