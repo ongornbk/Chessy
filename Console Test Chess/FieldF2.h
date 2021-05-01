@@ -1,5 +1,7 @@
 #pragma once
 #include "IField.h"
+#include "IBoard.h"
+
 class FieldF2 :
 	public IField
 {

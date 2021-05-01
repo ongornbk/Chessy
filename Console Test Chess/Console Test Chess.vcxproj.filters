@@ -198,6 +198,60 @@
     <ClCompile Include="FieldF6.cpp">
       <Filter>Classes\Fields</Filter>
     </ClCompile>
+    <ClCompile Include="FieldF8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldF7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldG8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH1.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH2.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH3.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH4.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH5.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH6.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH7.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldH8.cpp">
+      <Filter>Classes\Fields</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FieldA1.h">
@@ -378,6 +432,60 @@
       <Filter>Classes\Fields</Filter>
     </ClInclude>
     <ClInclude Include="FieldF6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldF8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldF7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldG8.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH1.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH3.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH2.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH4.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH5.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH6.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH7.h">
+      <Filter>Classes\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldH8.h">
       <Filter>Classes\Fields</Filter>
     </ClInclude>
   </ItemGroup>

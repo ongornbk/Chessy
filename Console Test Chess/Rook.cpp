@@ -2,6 +2,7 @@
 
 Rook::Rook(const EColor color)
 {
+	m_color = color;
 }
 
 void Rook::Update()

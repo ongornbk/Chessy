@@ -45,6 +45,24 @@
 #include "FieldF4.h"
 #include "FieldF5.h"
 #include "FieldF6.h"
+#include "FieldF7.h"
+#include "FieldF8.h"
+#include "FieldG1.h"
+#include "FieldG2.h"
+#include "FieldG3.h"
+#include "FieldG4.h"
+#include "FieldG5.h"
+#include "FieldG6.h"
+#include "FieldG7.h"
+#include "FieldG8.h"
+#include "FieldH1.h"
+#include "FieldH2.h"
+#include "FieldH3.h"
+#include "FieldH4.h"
+#include "FieldH5.h"
+#include "FieldH6.h"
+#include "FieldH7.h"
+#include "FieldH8.h"
 
 #include "Pawn.h"
 #include "Rook.h"
@@ -103,6 +121,24 @@ StdBoard::StdBoard()
 	m_fields.push_back(new class FieldF4()); //43
 	m_fields.push_back(new class FieldF5()); //44
 	m_fields.push_back(new class FieldF6()); //45
+	m_fields.push_back(new class FieldF7()); //46
+	m_fields.push_back(new class FieldF8()); //47
+	m_fields.push_back(new class FieldG1()); //48
+	m_fields.push_back(new class FieldG2()); //49
+	m_fields.push_back(new class FieldG3()); //50
+	m_fields.push_back(new class FieldG4()); //51
+	m_fields.push_back(new class FieldG5()); //52
+	m_fields.push_back(new class FieldG6()); //53
+	m_fields.push_back(new class FieldG7()); //54
+	m_fields.push_back(new class FieldG8()); //55
+	m_fields.push_back(new class FieldH1()); //56
+	m_fields.push_back(new class FieldH2()); //57
+	m_fields.push_back(new class FieldH3()); //58
+	m_fields.push_back(new class FieldH4()); //59
+	m_fields.push_back(new class FieldH5()); //60
+	m_fields.push_back(new class FieldH6()); //61
+	m_fields.push_back(new class FieldH7()); //62
+	m_fields.push_back(new class FieldH8()); //63
 
 
 	m_fields[0]->PutPiece(new Rook(EColor::PIECE_COLOR_WHITE));
@@ -127,6 +163,16 @@ StdBoard::StdBoard()
 	m_fields[39]->PutPiece(new King(EColor::PIECE_COLOR_BLACK));
 	m_fields[40]->PutPiece(new Bishop(EColor::PIECE_COLOR_WHITE));
 	m_fields[41]->PutPiece(new Pawn(EColor::PIECE_COLOR_WHITE));
+	m_fields[46]->PutPiece(new Pawn(EColor::PIECE_COLOR_BLACK));
+	m_fields[47]->PutPiece(new Bishop(EColor::PIECE_COLOR_BLACK));
+	m_fields[48]->PutPiece(new Knight(EColor::PIECE_COLOR_WHITE));
+	m_fields[49]->PutPiece(new Pawn(EColor::PIECE_COLOR_WHITE));
+	m_fields[54]->PutPiece(new Pawn(EColor::PIECE_COLOR_BLACK));
+	m_fields[55]->PutPiece(new Knight(EColor::PIECE_COLOR_BLACK));
+	m_fields[56]->PutPiece(new Rook(EColor::PIECE_COLOR_WHITE));
+	m_fields[57]->PutPiece(new Pawn(EColor::PIECE_COLOR_WHITE));
+	m_fields[62]->PutPiece(new Pawn(EColor::PIECE_COLOR_BLACK));
+	m_fields[63]->PutPiece(new Rook(EColor::PIECE_COLOR_BLACK));
 
 	for (auto ele : m_fields)
 	{

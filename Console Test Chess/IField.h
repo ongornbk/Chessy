@@ -13,6 +13,8 @@ public:
 	virtual const __int64 _stdcall GetIndex() const noexcept = 0;
 	virtual modern_array<IField*>& GetWhitePawnMoves();
 	virtual modern_array<IField*>& GetWhiteKnightMoves();
+	virtual modern_array<IField*>& GetWhiteRookMoves();
+	virtual modern_array<IField*>& GetWhiteBishopMoves();
 	modern_array<IField*>& GetMoves();
 	const char* const GetName() const;
 	const char* const GetPieceName() const;

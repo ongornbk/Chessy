@@ -12,6 +12,18 @@ modern_array<IField*>& IField::GetWhiteKnightMoves()
 	return *fields;
 }
 
+modern_array<IField*>& IField::GetWhiteRookMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	return *fields;
+}
+
+modern_array<IField*>& IField::GetWhiteBishopMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	return *fields;
+}
+
 modern_array<IField*>& IField::GetMoves()
 {
 	if(m_piece == nullptr)
@@ -20,6 +32,8 @@ modern_array<IField*>& IField::GetMoves()
 		modern_array<IField*>* fields = new modern_array<IField*>();
 		return *fields;
 	}
+
+
 	switch (m_piece->GetType())
 	{
 	case EPieceType::PAWN:
@@ -29,6 +43,14 @@ modern_array<IField*>& IField::GetMoves()
 	case EPieceType::KNIGHT:
 		if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
 			return GetWhiteKnightMoves();
+		break;
+	case EPieceType::ROOK:
+		if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
+			return GetWhiteRookMoves();
+		break;
+	case EPieceType::BISHOP:
+		if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
+			return GetWhiteBishopMoves();
 		break;
 }
 	modern_array<IField*>* fields = new modern_array<IField*>();
