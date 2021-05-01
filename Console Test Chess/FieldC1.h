@@ -8,6 +8,7 @@ class FieldC1 :
 public:
 	const __int64 _stdcall GetIndex() const noexcept override;
 	modern_array<IField*>& GetWhitePawnMoves() override;
+	modern_array<IField*>& GetWhiteBishopMoves() override;
 
 };
 

@@ -175,3 +175,13 @@ END:
 	return *fields;
 }
 
+modern_array<IField*>& FieldA1::GetWhiteKnightMoves()
+{
+	modern_array<IField*>* fields = new modern_array<IField*>();
+	if (m_board->GetFieldByIndex(FIELD_B3)->IsEmptyOrBlack())
+		fields->push_back(m_board->GetFieldByIndex(FIELD_B3));
+	if (m_board->GetFieldByIndex(FIELD_C2)->IsEmptyOrBlack())
+		fields->push_back(m_board->GetFieldByIndex(FIELD_C2));
+	return *fields;
+}
+

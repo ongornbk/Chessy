@@ -107,6 +107,13 @@ bool IField::HasBlackPiece() const noexcept
 	return false;
 }
 
+bool IField::HasWhitePiece() const noexcept
+{
+	if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)
+		return true;
+	return false;
+}
+
 bool IField::IsEmptyOrBlack() const noexcept
 {
 	if (m_occupancy == EOccupancy::FIELD_OCCUPANCY_WHITE)

@@ -71,6 +71,8 @@
 #include "Queen.h"
 #include "King.h"
 
+#include "Player.h"
+
 #include <iostream>
 
 StdBoard::StdBoard()
@@ -174,10 +176,21 @@ StdBoard::StdBoard()
 	m_fields[62]->PutPiece(new Pawn(EColor::PIECE_COLOR_BLACK));
 	m_fields[63]->PutPiece(new Rook(EColor::PIECE_COLOR_BLACK));
 
+	Player whitePlayer;
+	Player blackPlayer;
+
+	modern_shared<PlayerStats>& whiteStats = whitePlayer.GetStats();
+	modern_shared<PlayerStats>& blackStats = blackPlayer.GetStats();
+
 	for (auto ele : m_fields)
 	{
 		ele->SetBoard(this);
-		std::cout << ele->GetIndex() << " " << ele->GetName() << " " << ele->GetPieceName() << " " << ele->GetNumberOfMoves() << " ";
+		__int64 nummoves = ele->GetNumberOfMoves();
+		if(ele->HasWhitePiece())
+		whiteStats->AddMoves(nummoves);
+		else if (ele->HasBlackPiece())
+			blackStats->AddMoves(nummoves);
+		std::cout << ele->GetIndex() << " " << ele->GetName() << " " << ele->GetPieceName() << " " << nummoves << " ";
 		modern_array<IField*>& arr = ele->GetMoves();
 		for (auto move : arr)
 		{
@@ -186,6 +199,10 @@ StdBoard::StdBoard()
 		}
 		std::cout << std::endl;
 	}
+
+	std::cout << std::endl;
+	std::cout << "White " << whiteStats->GetNumberOfPossibleMoves() << std::endl;
+	std::cout << "Black " << blackStats->GetNumberOfPossibleMoves() << std::endl;
 }
 
 StdBoard::~StdBoard()

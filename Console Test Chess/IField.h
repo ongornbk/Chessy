@@ -23,6 +23,7 @@ public:
 	void SetBoard(class IBoard* const board);
 	bool IsEmpty() const noexcept;
 	bool HasBlackPiece() const noexcept;
+	bool HasWhitePiece() const noexcept;
 	bool IsEmptyOrBlack() const noexcept;
 };
 
